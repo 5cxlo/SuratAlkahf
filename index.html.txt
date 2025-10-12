@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سورة الكهف 🌿</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>ســورة الكهــف</h1>
+
+    <div class="controls">
+      <button id="playAudio" class="btn">▶️ استماع</button>
+      <button id="toggleMode" class="btn">🌙 خلفية داكنة</button>
+      <button id="shareBtn" class="btn">📤 مشاركة</button>
+      <button id="downloadPdf" class="btn">📄 تحميل PDF</button>
+    </div>
+
+    <div id="ayahContainer" class="ayahs">
+      <p>... جاري تحميل الآيات ...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    // 📄 تحميل ملف PDF
+    const downloadPdfBtn = document.getElementById("downloadPdf");
+    if (downloadPdfBtn) {
+      downloadPdfBtn.addEventListener("click", () => {
+        window.open("alkahf.pdf", "_blank");
+      });
+    }
+  </script>
+</body>
+</html>
